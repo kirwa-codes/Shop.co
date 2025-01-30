@@ -1,0 +1,505 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    height: 38px;
+    width: 100%;
+    background-color: black; /* Set the background to black */
+    position: relative; /* Allows absolute positioning of the img */
+}
+
+/* Paragraph in the center */
+header p {
+    font-size: 10px;
+    text-align: center;
+    flex-grow: 1; /* Ensures the <p> takes up available space */
+    color: white; /* White text color to contrast against black background */
+}
+
+/* Image styling */
+.img-header {
+    position: absolute;
+    right: 120px; /* Position the image to the right */
+}
+
+.img-header img {
+    cursor: pointer; /* Optional: Add a pointer cursor on hover for the image */
+}
+
+/* Nav container */
+nav {
+    display: flex; /* Flexbox to align items inline */
+    justify-content: space-between; /* Distribute space between elements */
+    align-items: center; /* Vertically center the items */
+    padding: 10px 20px; /* Add padding for spacing */
+    background-color: white; /* Set background color to white */
+    color: black; /* Text color for contrast with white background */
+}
+
+/* Logo styles */
+nav .logo h1 {
+    font-size: 50px;
+    margin-left: 90px;
+}
+
+/* Menu styles */
+nav .menu ul {
+    width: 400px;
+    display: flex;
+    text-align: center;
+    list-style: none; /* Remove bullet points */
+}
+
+nav .menu ul li {
+    margin: 0 10px;
+   
+     /* Space between menu items */
+}
+
+nav .menu ul li a {
+    color: black; /* Text color for menu items */
+    text-decoration: none; /* Remove underlines */
+    padding: 10px;
+}
+
+nav .menu ul li a:hover {
+    background-color: #f0f0f0; /* Hover effect (lighter gray) */
+    border-radius: 5px;
+}
+
+/* Search bar styles */
+nav .search input {
+    width: 458px;
+   
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+nav .search button {
+    background-color: #4CAF50; /* Green background for search button */
+    color: white;
+    padding: 5px 10px;
+
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+nav .search button:hover {
+    background-color: #45a049; /* Darker green when hovered */
+}
+
+/* Cart and User icons styles */
+nav .cart, nav .user {
+    font-size: 20px;
+  
+    cursor: pointer;
+}
+
+/* Ensure cart, search, and user are aligned close together */
+nav .cart {
+   border: 0;/* Adjust the spacing between cart and search */
+}
+
+nav .user {
+    margin-right: 100px;/* Adjust the spacing between user and cart */
+}
+
+nav .cart:hover, nav .user:hover {
+    color: #4CAF50; 
+}
+
+.homepage{
+    width: 100%;
+    height: 663px;
+   background-image: url(Assets/Rectangle\ 2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+
+.vector-1{
+    position: absolute;
+    top: 70px;
+    right: 70px;
+}
+
+.vector-2{
+    position: absolute;
+    top: 51%;
+    left: 53%;
+}
+.content{
+    position: absolute;
+    top: 75px;
+    left: 100px;
+}
+
+.content h1{
+    font-size: 64px;
+    color:#000000;
+    font-weight: 700;
+    line-height: 64px;
+}
+
+.content p{
+    font-size: 16px;
+    color: #00000099;
+    font-weight: 400;
+    line-height: 22px;
+    margin-top: 20px;
+}
+
+.btn-shop{
+    width: 200px;
+    height: 50px;
+    background: #000000;
+    color: white;
+    border: none;
+    border-radius: 62px;
+    margin-top: 20px;
+    cursor: pointer;
+    gap: 24px;
+    padding: 16px 54px;
+}
+
+.rating{
+    display: inline;
+    position: absolute;
+    top: 60%;
+    left: 100px;
+}
+
+.vertical-line {
+    width: 1px; /* Line thickness */
+    height: 5%; /* Full height */
+    background-color: red; /* Line color */
+  }
+
+  .brands{
+    background: #000000;
+    height: 122px;
+    display: flex; /* Flexbox to align items inline */
+    justify-content: space-between; /* Distribute space between elements */
+    align-items: center; /* Vertically center the items */
+    padding: 10px 20px; /* Add padding for spacing */
+    
+
+  }
+
+  .img{
+    cursor: pointer;
+  }
+
+  .arrivals .title {
+   text-align: center; 
+   
+  }
+
+  .arrivals h1{
+    line-height: 58px;
+    margin-top: 70px;
+    font-weight: 700;
+  }
+  .card{
+    width: 80%;
+    display: flex;
+   align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 50px;
+  
+ 
+  }
+  .card-content{
+    width: 295px;
+    cursor: pointer;
+   
+  }
+  .card-content:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+  }
+  .img-card{
+    height: 298px;
+    width: 295px;
+    border-radius: 20px;
+  }
+  .card .card-content h5{
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 10px;
+    line-height: 27px;
+  }
+
+  
+
+  .card .card-content .stars {
+    width: 150px;
+    height: 19px;
+  }
+  .card .card-content h6{
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .view-btn button{
+    width: 200px;
+    height: 50px;
+   color: black;
+    border: 1px solid #0000001A;
+    border-radius: 62px;
+    margin-top: 20px;
+    cursor: pointer;
+    gap: 24px;
+    padding: 16px 54px;
+
+  }
+  .view-btn{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+  }
+
+  .custom-line {
+
+    width: 80%;
+    border: 0;
+    border-top: 2px solid #0000001A; /* Change color and thickness */
+    
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+
+    
+  }
+  
+  .browse{
+    margin-top: 100px;
+    height: 866px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    background: #F0F0F0;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    border-radius: 40px;
+    margin-bottom: 80px;
+  }
+  .browse-title {
+    margin-top: 50px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .box-1{
+    width: 407px;
+    height: 289px;
+    border-radius: 20px;
+    cursor: pointer;
+    background-image: url(Assets/box\ 1.png);
+  }
+  .box-2{
+    width: 684px;
+    height: 289px;
+    border-radius: 20px;
+    background-image: url(Assets/box-2.png);
+    cursor: pointer;
+  }
+  .box-3{
+    width: 684px;
+    height: 289px;
+    border-radius: 20px;
+    background-image: url(Assets/box-3.png);
+    cursor: pointer;
+    margin-top: 50px;
+  }
+  .box-4{
+    width: 407px;
+    height: 289px;
+    border-radius: 20px;
+    background-image: url(Assets/box-4.png);
+    cursor: pointer;
+    
+    margin-top: 50px;
+  }
+ .box-4:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+  }
+  .box-2:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+  }
+  .box-3:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+  }
+  .box-1:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+  }
+  .browse-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px;
+    margin-top: 100px;
+  }
+  .haaa{
+    font-size: 36px;
+    margin: 20px;
+    text-align: left;
+  }
+  .customer-section {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .customer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .arrow{
+    height: 1.5px;
+    border-width: 10px 20px 10px 0;
+    border-color: transparent blue transparent transparent;
+  }
+
+  .comments{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+
+  .review{
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .comment-1{
+    width: 400px;
+    height: 240px;
+    border: 1px solid #0000001A;
+    padding: 30px;
+  }
+  .Client{
+    margin-top: 10px;
+    line-height: 22px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .client-comment{
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+
+  }
+
+  footer{
+    width: 100%;
+    height: 499px;
+    background-color: #F0F0F0;
+    margin-top: 180px;
+    position: absolute;
+  }
+
+  .footer-header{
+    width: 80%;
+    position: relative;
+    background-color: #000000;
+    margin-top: -90px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 180px;
+    border-radius: 20px;
+    
+  }
+
+  .futa-content{
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  .futa-title{
+    font-size: 40px;
+    line-height: 45px;
+    color: #ffffff;
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+  .futa-input input{
+    margin-top: 30px;
+    height: 46px;
+    width: 349px;
+    border-radius: 62px;
+    text-align: center;
+    margin-right: 40px;
+  }
+  .futa-input{
+    margin-right: 40px;
+    margin-bottom: 30px;
+  }
+  .futa-main{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+
+  .futa-body{
+   
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+  }
+#h1{
+    font-size: 33px;
+    line-height: 40px;
+    font-weight: 700px;
+    cursor: none;
+  }
+
+  .shop h1{
+
+    font-size: 16px;
+    letter-spacing: 3px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  .shop p{
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+    color: #00000099;
+    margin-top: 15px;
+    cursor: pointer;
+
+  }
+.socials img{
+  margin-top: 20px;
+  cursor: pointer;
+
+}
+.horizontal-line {
+  width: 100%;        /* Makes the line full-width */
+  height: 2px;        /* Sets the thickness of the line */
+  background-color: #0000001A; /* Sets the color of the line */
+  margin-top: 30px;     /* Adds space above and below the line */
+}
