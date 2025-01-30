@@ -12,7 +12,4 @@ This is a simple, static e-commerce shop layout created using only **HTML** and 
 ## Tech Stack
 - **Frontend**: HTML, CSS (No JavaScript used)
 
-## Installation
-
-### Steps to Run the Project Locally
 
